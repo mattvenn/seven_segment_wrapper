@@ -1,7 +1,7 @@
 `default_nettype none
 `define MPRJ_IO_PADS 38
 
-module project_wrapper #(
+module seven_seg_wrapper #(
     parameter ADDR_BASE         = 32'h30000000,
     parameter ADDR_COMPARE      = 32'h30000004,
     // configure OEB so that when project is active the pins that you want as outputs are set low
@@ -44,8 +44,8 @@ module project_wrapper #(
     // have a way of resetting project via wishbone
     reg wb_reset;
 
-    // set all as input unless project is active
-    assign io_oeb = active ? OEB : {`MPRJ_IO_PADS {1'b1}};
+    // set all as output unless project is active
+    assign io_oeb = active ? OEB : {`MPRJ_IO_PADS {1'b0}};
 
     // only connect outputs if this project is active
     assign io_out = active ? project_out : {`MPRJ_IO_PADS {1'b0}};
@@ -114,7 +114,7 @@ module project_wrapper #(
     `ifdef COCOTB_SIM
         initial begin
             $dumpfile ("harness.vcd");
-            $dumpvars (0, project_wrapper);
+            $dumpvars (0, seven_seg_wrapper);
             #1;
         end
     `endif
@@ -128,7 +128,7 @@ module project_wrapper #(
                 assert(io_oeb == OEB);
             end else begin
                 assert(io_out == {`MPRJ_IO_PADS {1'b0}});
-                assert(io_oeb == {`MPRJ_IO_PADS {1'b1}});
+                assert(io_oeb == {`MPRJ_IO_PADS {1'b0}});
             end
         end
         // basic wishbone compliance

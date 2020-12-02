@@ -7,7 +7,7 @@ smtbmc yices
 
 [script]
 read -formal project_wrapper.v
-prep -top project_wrapper
+prep -top seven_seg_wrapper
 
 [files]
 project_wrapper.v
