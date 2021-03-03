@@ -1,0 +1,129 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Mar  3 15:56:33 2021
+[*]
+[dumpfile] "/home/matt/work/asic-workshop/caravel-mph/verilog/dv/caravel/user_proj_example/caravel_test/coco.vcd"
+[dumpfile_mtime] "Wed Mar  3 15:55:38 2021"
+[dumpfile_size] 105853335
+[savefile] "/home/matt/work/asic-workshop/caravel-mph/verilog/dv/caravel/user_proj_example/caravel_test/seven_segment.gtkw"
+[timestart] 192199000
+[size] 2488 1529
+[pos] -1 -1
+*-20.000000 197593000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] seven_segment_tb.
+[treeopen] seven_segment_tb.uut.
+[treeopen] seven_segment_tb.uut.gpio_control_bidir[0].gpio_in_buf.
+[treeopen] seven_segment_tb.uut.gpio_control_bidir[0].gpio_logic_high.
+[treeopen] seven_segment_tb.uut.gpio_control_in[4].gpio_in_buf.
+[treeopen] seven_segment_tb.uut.gpio_control_in[4].gpio_logic_high.
+[treeopen] seven_segment_tb.uut.mprj.
+[treeopen] seven_segment_tb.uut.mprj.wrapped_seven_segment.
+[treeopen] seven_segment_tb.uut.soc.
+[treeopen] seven_segment_tb.uut.soc.housekeeping.
+[treeopen] seven_segment_tb.uut.soc.soc.
+[treeopen] seven_segment_tb.uut.soc.soc.cpu.
+[treeopen] seven_segment_tb.uut.soc.soc.cpu.picorv32_core.
+[treeopen] seven_segment_tb.uut.soc.soc.gpio_wb.
+[treeopen] seven_segment_tb.uut.soc.soc.mprj_ctrl.
+[sst_width] 680
+[signals_width] 732
+[sst_expanded] 1
+[sst_vpaned_height] 714
+@28
+seven_segment_tb.clock
+seven_segment_tb.uut.clock
+seven_segment_tb.RSTB
+@22
+seven_segment_tb.uut.soc.soc.cpu.picorv32_core.next_insn_opcode[31:0]
+@200
+-
+@800200
+-la
+@22
+seven_segment_tb.uut.mprj.la_data_in[127:0]
+seven_segment_tb.uut.mprj.la_data_out[127:0]
+seven_segment_tb.uut.mprj.la_oen[127:0]
+@200
+-
+@1000200
+-la
+@200
+-
+@800200
+-io
+@22
+seven_segment_tb.uut.mprj.io_in[37:0]
+seven_segment_tb.uut.mprj.io_oeb[37:0]
+@c00022
+seven_segment_tb.uut.mprj.io_out[37:0]
+@28
+(0)seven_segment_tb.uut.mprj.io_out[37:0]
+(1)seven_segment_tb.uut.mprj.io_out[37:0]
+(2)seven_segment_tb.uut.mprj.io_out[37:0]
+(3)seven_segment_tb.uut.mprj.io_out[37:0]
+(4)seven_segment_tb.uut.mprj.io_out[37:0]
+(5)seven_segment_tb.uut.mprj.io_out[37:0]
+(6)seven_segment_tb.uut.mprj.io_out[37:0]
+(7)seven_segment_tb.uut.mprj.io_out[37:0]
+(8)seven_segment_tb.uut.mprj.io_out[37:0]
+(9)seven_segment_tb.uut.mprj.io_out[37:0]
+(10)seven_segment_tb.uut.mprj.io_out[37:0]
+(11)seven_segment_tb.uut.mprj.io_out[37:0]
+(12)seven_segment_tb.uut.mprj.io_out[37:0]
+(13)seven_segment_tb.uut.mprj.io_out[37:0]
+(14)seven_segment_tb.uut.mprj.io_out[37:0]
+(15)seven_segment_tb.uut.mprj.io_out[37:0]
+(16)seven_segment_tb.uut.mprj.io_out[37:0]
+(17)seven_segment_tb.uut.mprj.io_out[37:0]
+(18)seven_segment_tb.uut.mprj.io_out[37:0]
+(19)seven_segment_tb.uut.mprj.io_out[37:0]
+(20)seven_segment_tb.uut.mprj.io_out[37:0]
+(21)seven_segment_tb.uut.mprj.io_out[37:0]
+(22)seven_segment_tb.uut.mprj.io_out[37:0]
+(23)seven_segment_tb.uut.mprj.io_out[37:0]
+(24)seven_segment_tb.uut.mprj.io_out[37:0]
+(25)seven_segment_tb.uut.mprj.io_out[37:0]
+(26)seven_segment_tb.uut.mprj.io_out[37:0]
+(27)seven_segment_tb.uut.mprj.io_out[37:0]
+(28)seven_segment_tb.uut.mprj.io_out[37:0]
+(29)seven_segment_tb.uut.mprj.io_out[37:0]
+(30)seven_segment_tb.uut.mprj.io_out[37:0]
+(31)seven_segment_tb.uut.mprj.io_out[37:0]
+(32)seven_segment_tb.uut.mprj.io_out[37:0]
+(33)seven_segment_tb.uut.mprj.io_out[37:0]
+(34)seven_segment_tb.uut.mprj.io_out[37:0]
+(35)seven_segment_tb.uut.mprj.io_out[37:0]
+(36)seven_segment_tb.uut.mprj.io_out[37:0]
+(37)seven_segment_tb.uut.mprj.io_out[37:0]
+@1401200
+-group_end
+@800022
+seven_segment_tb.mprj_io[37:0]
+@28
+(22)seven_segment_tb.mprj_io[37:0]
+(23)seven_segment_tb.mprj_io[37:0]
+(24)seven_segment_tb.mprj_io[37:0]
+(25)seven_segment_tb.mprj_io[37:0]
+(26)seven_segment_tb.mprj_io[37:0]
+(27)seven_segment_tb.mprj_io[37:0]
+(28)seven_segment_tb.mprj_io[37:0]
+@1001200
+-group_end
+@1000200
+-io
+@200
+-
+@22
+seven_segment_tb.segments[6:0]
+@28
+seven_segment_tb.uut.mprj.wrapped_seven_segment.seven_segment_seconds.reset
+seven_segment_tb.uut.mprj.wrapped_seven_segment.active
+@22
+seven_segment_tb.uut.mprj.wrapped_seven_segment.seven_segment_seconds.compare[23:0]
+seven_segment_tb.uut.mprj.wrapped_seven_segment.seven_segment_seconds.second_counter[23:0]
+@28
+seven_segment_tb.uut.mprj.wrapped_seven_segment.seven_segment_seconds.update_compare
+@22
+seven_segment_tb.uut.mprj.wrapped_seven_segment.seven_segment_seconds.led_out[6:0]
+[pattern_trace] 1
+[pattern_trace] 0
