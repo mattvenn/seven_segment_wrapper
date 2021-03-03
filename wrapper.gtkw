@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Mar  3 13:25:08 2021
+[*]
+[dumpfile] "/home/matt/work/asic-workshop/course/projects/7seg_wrapper/wrapper.vcd"
+[dumpfile_mtime] "Wed Mar  3 13:24:35 2021"
+[dumpfile_size] 8627
+[savefile] "/home/matt/work/asic-workshop/course/projects/7seg_wrapper/wrapper.gtkw"
+[timestart] 0
+[size] 1931 1003
+[pos] -1032 -264
+*-20.000000 901000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] wrapped_seven_segment.
+[sst_width] 273
+[signals_width] 484
+[sst_expanded] 1
+[sst_vpaned_height] 277
+@28
+wrapped_seven_segment.active
+@22
+wrapped_seven_segment.la_data_in[31:0]
+@28
+wrapped_seven_segment.wb_clk_i
+wrapped_seven_segment.wb_rst_i
+@22
+wrapped_seven_segment.seven_segment_seconds.digit[3:0]
+@28
+wrapped_seven_segment.seven_segment_seconds.clk
+@29
+wrapped_seven_segment.seven_segment_seconds.reset
+[pattern_trace] 1
+[pattern_trace] 0

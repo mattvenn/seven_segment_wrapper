@@ -1,14 +1,18 @@
 # cocotb setup
-MODULE = test
-TOPLEVEL = seven_seg_wrapper
-PROJ_SOURCES = seven-segment-seconds/seven_segment_seconds.v
+PROJ_SOURCES = wrapper.v test/dump_wrapper.v seven-segment-seconds/seven_segment_seconds.v
+export COCOTB_REDUCED_LOG_FMT=1
 
-VERILOG_SOURCES = project_wrapper.v $(PROJ_SOURCES)
+test_wrapper:
+	rm -rf sim_build/
+	mkdir sim_build/
+	iverilog -o sim_build/sim.vvp -DMPRJ_IO_PADS=38 -s wrapped_seven_segment -s dump -g2012 $(PROJ_SOURCES)
+	MODULE=test.test vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
 
-include $(shell cocotb-config --makefiles)/Makefile.sim
+show_wrapper:
+	gtkwave wrapper.vcd wrapper.gtkw
 
 formal:
 	sby -f properties.sby
 
-clean::
+clean:
 	rm -rf *vcd properties

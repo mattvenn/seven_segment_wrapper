@@ -1,13 +1,14 @@
 [options]
 mode prove
-depth 20
 
 [engines]
-smtbmc yices
+smtbmc
 
 [script]
-read -formal project_wrapper.v
-prep -top seven_seg_wrapper
+read -formal wrapper.v seven_segment_seconds.v
+prep -top wrapped_seven_segment
 
 [files]
-project_wrapper.v
+wrapper.v
+properties.v
+seven-segment-seconds/seven_segment_seconds.v
