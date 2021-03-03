@@ -15,7 +15,7 @@ caravel_test:
 # module test
 module_test:
   recipe: "all" 
-  directory: "frequency_counter"
+  directory: "seven-segment-seconds"
   makefile: "Makefile"
 
 # run the wrapper formal proof
