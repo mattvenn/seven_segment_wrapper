@@ -1,8 +1,12 @@
 --- 
 # information
 project: 
-  description: "Seven Segment Seconds"
-  owner: "Matt Venn"
+  title: "Seven Segment Seconds"
+  description: "Very simple demo project that counts seconds on a seven segment display"
+  picture: docs/seven_segment.png
+  author: "Matt Venn"
+  github: https://github.com/mattvenn/seven_segment_wrapper
+  license: LICENSE
 
 # test within caravel
 caravel_test:
